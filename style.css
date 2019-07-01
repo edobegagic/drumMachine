@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo", sans-serif;
+  color: rgb(138, 48, 138);
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  border-bottom: dashed pink 5px;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px; /*clockwise*/
+  text-align: center;
+  font-size: 50px;
+}
+
+header p {
+  margin: 0px 0px 30px 0px; /*clockwise*/
+  text-align: center;
+  font-size: 20px;
+}
+
+.pads {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-top: ridge pink 10px;
+}
+
+/* select all individual divs in the pads */
+.pads > div {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.pad1 {
+  background: rgb(116, 197, 224);
+}
+.pad2 {
+  background: rgb(233, 106, 106);
+}
+.pad3 {
+  background: rgb(93, 233, 93);
+}
+.pad4 {
+  background: rgb(255, 124, 144);
+}
+.pad5 {
+  background: lightseagreen;
+}
+.pad6 {
+  background: rgb(111, 158, 221);
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  bottom: 0%;
+  left: 20%;
+  bottom: 0%;
+  z-index: -1;
+  flex-wrap: wrap;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 50%;
+    left: 0%;
+  }
+
+  50% {
+    bottom: 60%;
+    left: 50%;
+  }
+  100% {
+    bottom: 50%;
+    left: 97%;
+  }
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  bottom: 0%;
+  left: 20%;
+}
